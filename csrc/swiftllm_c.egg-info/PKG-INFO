@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: swiftllm_c
+Version: 0.0.1
+Summary: Some C++/CUDA sources for SwiftLLM.
+Requires-Python: >=3.9

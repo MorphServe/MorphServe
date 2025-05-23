@@ -1,0 +1,26 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -pthread -B /home/alex/anaconda3/envs/morphserve/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/alex/anaconda3/envs/morphserve/include -fPIC -O2 -isystem /home/alex/anaconda3/envs/morphserve/include -fPIC -Isrc -I/home/alex/anaconda3/envs/morphserve/lib/python3.10/site-packages/torch/include -I/home/alex/anaconda3/envs/morphserve/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/alex/anaconda3/envs/morphserve/lib/python3.10/site-packages/torch/include/TH -I/home/alex/anaconda3/envs/morphserve/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/alex/anaconda3/envs/morphserve/include/python3.10 -c
+post_cflags = -O3 -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=swiftllm_c -D_GLIBCXX_USE_CXX11_ABI=0
+cuda_dlink_post_cflags = 
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+
+
+build /mnt/ssd_smart/alex/swiftLLM/csrc/build/temp.linux-x86_64-cpython-310/src/block_swapping.o: compile /mnt/ssd_smart/alex/swiftLLM/csrc/src/block_swapping.cpp
+build /mnt/ssd_smart/alex/swiftLLM/csrc/build/temp.linux-x86_64-cpython-310/src/entrypoints.o: compile /mnt/ssd_smart/alex/swiftLLM/csrc/src/entrypoints.cpp
+build /mnt/ssd_smart/alex/swiftLLM/csrc/build/temp.linux-x86_64-cpython-310/src/memory_manager.o: compile /mnt/ssd_smart/alex/swiftLLM/csrc/src/memory_manager.cpp
+
+
+
+
+
+

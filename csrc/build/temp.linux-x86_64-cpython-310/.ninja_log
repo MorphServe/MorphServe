@@ -1,0 +1,4 @@
+# ninja log v5
+0	16042	1745949495702479722	/mnt/ssd_smart/alex/swiftLLM/csrc/build/temp.linux-x86_64-cpython-310/src/block_swapping.o	f92cf0e8c302a5c5
+0	16702	1745949496366484607	/mnt/ssd_smart/alex/swiftLLM/csrc/build/temp.linux-x86_64-cpython-310/src/entrypoints.o	d2c60ad1706b881e
+1	16968	1745949496626486520	/mnt/ssd_smart/alex/swiftLLM/csrc/build/temp.linux-x86_64-cpython-310/src/memory_manager.o	d2f10a3623a220a6
