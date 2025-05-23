@@ -8,7 +8,7 @@
 
 This repository provides the code, configuration, and artifacts for reproducing paper results. 
 
-The full implementation will be made publicly available soon, as pending final codebase organization and documentation.
+The full implementation will be made publicly available shortly, pending final codebase organization and documentation.
 
 ---
 
