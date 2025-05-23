@@ -4,4 +4,4 @@ ray[default]>=2.21
 safetensors>=0.4.3
 transformers>=4.40
 uvicorn>=0.29
-vllm_flash_attn>=2.5.8	# Yes, we grab the attention module from the VLLM library
+vllm_flash_attn>=2.5.8
