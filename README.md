@@ -8,9 +8,6 @@
 
 This repository provides the code, configuration, and artifacts for reproducing paper results. 
 
-**
-### The full implementation will be made publicly available soon, pending final codebase organization and documentation. Thank you！
-
 
 ---
 
@@ -84,4 +81,7 @@ python scripts/run_morphserve.py --config configs/llama2_7b.yaml
 
 Each incoming request from the trace is assigned a sampled context from these datasets to form a complete, content-rich workload for LLM evaluation.
 
+---
+
+## The full implementation will be made publicly available soon, pending final codebase organization and documentation. Thank you！
 
