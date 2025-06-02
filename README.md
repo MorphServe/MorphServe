@@ -21,10 +21,9 @@ This repository provides the code, configuration, and artifacts for reproducing 
 
 ---
 
-## The full implementation will be made publicly available in a few days, pending final codebase organization and documentation. Thank you！
+## The full implementation will be made publicly available after acceptance. Thank you！
 
----
-
+<!---
 ## 🚀 Getting Started
 
 ### Requirements
@@ -42,7 +41,7 @@ pip install -r requirements.txt
 # Run MorphServe with precompiled models
 python scripts/run_morphserve.py --config configs/llama2_7b.yaml
 ```
-
+-->
 ## 📊 Evaluation Setup
 
 ### Models
