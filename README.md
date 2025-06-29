@@ -8,9 +8,6 @@
 
 This repository provides the code, configuration, and artifacts for reproducing paper results. 
 
-
----
-
 ## 🔧 Features
 
 - **Runtime-adaptive mixed-precision execution** (FP16, W8, W4).
