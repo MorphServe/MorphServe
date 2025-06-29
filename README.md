@@ -17,7 +17,6 @@ This repository provides the code, configuration, and artifacts for reproducing 
 - **Configurable performance vs. accuracy trade-offs** (runtime modes).
 
 
-<!---
 ## 🚀 Getting Started
 
 ### Requirements
@@ -26,16 +25,21 @@ This repository provides the code, configuration, and artifacts for reproducing 
 - CUDA 12.7+
 - PyTorch 2.0+
 - NVIDIA L4 (24GB) / A100 (80GB) recommended
-  
-```
-git clone https://github.com/MorphServe/MorphServe.git
-cd MorphServe
-pip install -r requirements.txt
 
-# Run MorphServe with precompiled models
-python scripts/run_morphserve.py --config configs/llama2_7b.yaml
+Install AWQ first following the instructions: https://github.com/mit-han-lab/llm-awq
+Create new env:
 ```
--->
+conda create -n morphserve python=3.10 -y
+conda activate morphserve
+```
+install MorphServe
+```
+cd MorphServe
+pip install --upgrade pip  # enable PEP 660 support
+pip install -r requirements.txt
+pip install -e .
+```
+
 ## 📊 Evaluation Setup
 
 ### Models
