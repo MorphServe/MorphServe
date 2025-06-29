@@ -19,7 +19,7 @@ This repository provides the code, configuration, and artifacts for reproducing 
 
 ## 🚀 Getting Started
 
-### Requirements
+### Install
 
 - Python 3.10+
 - CUDA 12.7+
