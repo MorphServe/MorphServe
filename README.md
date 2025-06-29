@@ -19,9 +19,6 @@ This repository provides the code, configuration, and artifacts for reproducing 
 - **Minimal integration overhead** into SwiftLLM / vLLM-style engines.
 - **Configurable performance vs. accuracy trade-offs** (runtime modes).
 
----
-
-## The full implementation will be made publicly available after acceptance. Thank you！
 
 <!---
 ## 🚀 Getting Started
