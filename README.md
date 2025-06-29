@@ -26,7 +26,12 @@ This repository provides the code, configuration, and artifacts for reproducing 
 - PyTorch 2.0+
 - NVIDIA L4 (24GB) / A100 (80GB) recommended
 
-Install AWQ first following the instructions: https://github.com/mit-han-lab/llm-awq
+First, install AWQ by following the official instructions here:
+🔗 https://github.com/mit-han-lab/llm-awq
+
+Then, use AWQ to generate INT4 quantized models for the following base models:
+Vicuna 7B, Llama 2 7B, Llama 3 8B, and CodeLlama 34B
+
 Create new env:
 ```
 conda create -n morphserve python=3.10 -y
